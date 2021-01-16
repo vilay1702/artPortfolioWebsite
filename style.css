@@ -130,7 +130,8 @@ footer img{
 
 #about{
     display: flex;
-    height: 1000px;
+    padding-top: 100px;
+    color: #ffffff;
 }
 
 section #myImage img{
@@ -140,7 +141,11 @@ section #myImage img{
 
 #about #myInfo{
     width: 50%;
-    border: 2px solid black;
+}
+
+#myInfo p a{
+    text-decoration: none;
+    color: #c5fbff;
 }
 
 /* ========================== About End ========================== */
