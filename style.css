@@ -132,15 +132,18 @@ footer img{
     display: flex;
     padding-top: 100px;
     color: #ffffff;
+    height: 800px;
 }
 
 section #myImage img{
-    width: 50%;
+    width: 100%;
     height: auto;
+    float: left;
 }
 
 #about #myInfo{
-    width: 50%;
+    width: 100%;
+    float: right;
 }
 
 #myInfo p a{
