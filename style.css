@@ -1,246 +1,73 @@
-
-*{
-    margin: 0;
-    padding: 0;
+.myFonts{
+    font-family: 'Pangolin', cursive;
 }
 
-body{
-    font-size: 18px;
-    font-family: 'Baloo 2', cursive;
-    line-height: 1.5;
-    background-color:  #0a101f;
+.card img{
+    border: 1px solid #808080;
 }
 
-/* ========================== Global ========================== */
-
-.container{
-    width: 80vw;
-    overflow: hidden;
-    margin: auto;
+.card{
+    background-color: #ffffff;
 }
 
 .highlight{
-    color: #ff9900;
+    color:#0dcaf0!important;
     font-weight: bold;
 }
 
 
-/* ======= Header and footer =======  */
+.card img{
+    border: 1px solid #808080;
+}
 
-/*  Header  */
+.card{
+    background-color: #f5f5f5;
+}
 
-header{
-    position: fixed;
-    height: 100px;
-    width: 80%;
-    padding: 0px 10%;
-    background-color: #202945;
-    color: #ffffff;
+#feedback{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fcf816;
+}
+
+
+/* ============================== Extra ============================== */
+.myNav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 5px solid #ff9900;
-    animation: displayNav 1s ;
 }
 
-
-#brand{
-    font-size: 30px;
+.myBrand{
+    text-decoration: none;
+    color: #0dcaf0;
 }
 
+.myNavBar{
+    display: flex;
+    flex-direction: row;
+}
 
-header nav ul{
+.myNavItem{
     list-style: none;
-    display: flex;
-    font-size: 22px;
+    padding-right: 20px;
 }
 
-header nav ul li a{
+.myNavLink{
     text-decoration: none;
-    color: #ffffff;
-    padding: 0px 10px; 
-}
-
-/*  Footer  */
-
-footer{
-    background-color: #202945;
-    color: #ffffff;
-    height: 100px;
-    padding: 0px 10%;
-    display: flex;
-    align-items: center;
-}
-
-footer a{
-    text-decoration: none;
-    color: #ffffff;
-}
-
-footer a:hover{
-    font-weight: bolder;
-}
-
-footer img{
-    width: 20px;
-}
-
-/* ======= Header and Footer End =======  */
-
-/* ========================== Global End ========================== */
-
-
-
-/* ========================== Home ========================== */
-
-/* ======= Introduction ======= */
-#intro{
-    /* background-image: url(images/introBackground.jpg); */
-    height: 400px;
-    text-align: center;
-    padding: 20px;
-    margin-bottom: 20px;
-    color: #ffffff;
-    background-color: #00000070;
-    animation: topToDown 1.5s ease-out ;
-}
-
-#intro h1{
-    margin-top: 200px!important;
-    font-size: 40px;
-}
-
-#intro h1, #intro p{
-    margin: auto;
-    animation-name: show;
-    animation-duration: 3s;
+    color: black;
 }
 
 
 
-/* ======= Artworks ======= */
-
-.artWork{
-    width: 47%;
-    height: auto;
-    margin: 1.3%;
-    border-radius: 50px;
-    animation-name: fade;
-    animation-duration: 4s;
-}
-
-
-/* ========================== Home End ========================== */
-
-
-
-
-
-/* ========================== About ========================== */
-
-#about{
-    display: flex;
-    padding-top: 100px;
-    color: #ffffff;
-    height: 800px;
-}
-
-section #myImage img{
-    width: 100%;
-    height: auto;
-    float: left;
-}
-
-#about #myInfo{
-    width: 100%;
-    float: right;
-}
-
-#myInfo p a{
-    text-decoration: none;
-    color: #c5fbff;
-}
-
-/* ========================== About End ========================== */
-
-
-
-
-/* ========================== Responsive ========================== */
-
-@media only screen and (max-width: 600px){
-    header{
+@media only screen and (max-width: 600px) {
+    myNav{
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
     }
-
-    #intro{
-        height: 600px;
-    }
-
-    .artWork{
-        width: 100%;
-        float: none;
-    }
-
-    #about{
-        flex-direction: column;
-    }
-}
-
-/* ========================== Responsive End ========================== */
-
-
-/* ============================ Animations ============================ */
-
-    @keyframes fade{
-        0%{
-            opacity: 0%;
-        }
-
-        100%{
-            opacity: 100%;
-        }
-    }
-
-    @keyframes show{
-        0%{
-            width: 0%;
-            opacity: 0%;
-        }
-        50%{
-            width: 50%;
-            opacity: 0%;
-        }
-        100%{
-            width: 100%;
-            opacity: 100%;
-        }
-    }
-
-    @keyframes topToDown{
-        from{
-            height: 0px;
-        }
-        to{
-            height: 400px;
-        }
-    }
-
-    @keyframes displayNav{
-        from{
-            width: 0%;
-            margin-left: 50%;
-        }
-        to{
-            width: 80%;
-            margin-left: 0%;
-        }
-    }
-
-/* ========================== Animations End ========================== */
-
-
-
-
-
+  }
