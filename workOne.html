@@ -13,43 +13,40 @@
     <!-- CSS linked -->
     <link rel="stylesheet" href="style.css">
 
+    <!-- Fonts linked -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+
     <title>Saarthak Verma Art Gallery | Works</title>
 </head>
 
-<body>
+<body class="myFonts">
 
     <header>
-        <nav class="navbar navbar-light bg-light">
-            <div class="container myNav">
-                <a class="myBrand fs-3" href="index.html">SAARTHAK</a>
-
-                <ul class="myNavBar fs-4">
-                    <li class="myNavItem">
-                        <a class="myNavLink" aria-current="page" href="about.html">About</a>
-                    </li>
-
-                    <li class="myNavItem">
-                        <a class="myNavLink" href="contact.html">Contact</a>
-                    </li>
-
-                    <li class="myNavItem dropdown">
-                        <a class="myNavLink dropdown-toggle" href="#" id="navbarDropdown" role="button"
+        <nav class="fixed-top">
+            <div class="myNav container">
+      
+              <a href="index.html" id="logo" class="fs-2 myBrand">SAARTHAK </a>
+      
+              <ul class="myNavList fs-3">
+                <li class="myNavItem"><a href="about.html" class="myNavLink">About</a></li>
+                <li class="myNavItem"><a href="contact.html" class="myNavLink">Contact</a></li>
+                <li class="myNavItem">
+                    <div class="dropdown">
+                        <button class="btn fs-3 btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
                             data-bs-toggle="dropdown" aria-expanded="false">
                             Works
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="workOne.html">Portraits</a></li>
-                            <li><a class="dropdown-item" href="workOne.html">Landscapes</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="workOne.html">Canvas</a></li>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <li><a class="dropdown-item" href="#">Portraits</a></li>
+                            <li><a class="dropdown-item" href="#">Landscapes</a></li>
+                            <li><a class="dropdown-item" href="#">Canvas</a></li>
                         </ul>
-                    </li>
-
-                </ul>
+                    </div>
+                </li>
+              </ul>
             </div>
-        </nav>
+          </nav>
     </header>
 
     <footer class="footer mt-auto py-3 bg-light">

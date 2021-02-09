@@ -2,6 +2,10 @@
     font-family: 'Pangolin', cursive;
 }
 
+.intro{
+    margin-top: 100px;
+}
+
 .card img{
     border: 1px solid #808080;
 }
@@ -21,26 +25,42 @@
 }
 
 .card{
-    background-color: #f5f5f5;
+    background-color: #bddaff;
 }
 
 #feedback{
     display: flex;
     height: 500px;
     width: 100%;
-    margin-top: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #fcf816;
 }
 
+.myMargin{
+    margin-top: 100px;
+}
 
-/* ============================== Extra ============================== */
-.myNav{
+/* ============================== NavBar ============================== */
+.myNavList{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
+}
+
+.myNav{
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav{
+    background-color: #f5f5f5;
+    border-bottom: 2px solid gray;
 }
 
 .myBrand{
@@ -48,10 +68,6 @@
     color: #0dcaf0;
 }
 
-.myNavBar{
-    display: flex;
-    flex-direction: row;
-}
 
 .myNavItem{
     list-style: none;
@@ -61,13 +77,13 @@
 .myNavLink{
     text-decoration: none;
     color: black;
-}
-
-
+} 
+ 
 
 @media only screen and (max-width: 600px) {
-    myNav{
+    .myNav{
         flex-direction: column;
         justify-content: center;
     }
+
   }

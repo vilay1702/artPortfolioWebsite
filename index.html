@@ -20,38 +20,38 @@
   <title> Saarthak Verma Art Gallery | Home </title>
 </head>
 
-<body>
+<body class="myFonts">
 
   <header>
 
     <nav class="fixed-top">
-      <div class="d-flex justify-content-between myNavbar bg-light container myFonts">
+      <div class="myNav container">
 
-        <a href="index.html" id="logo" class="text-info fs-3 navbar-brand"><strong> SAARTHAK </strong></a>
+        <a href="index.html" id="logo" class="fs-2 myBrand highlight">SAARTHAK </a>
 
-        <ul class="fs-4 nav d-flex justify-content-between">
-          <li class="myNavItems"><a href="about.html" class="text-dark nav-link">About</a></li>
-          <li class="myNavItems"><a href="contact.html" class="text-dark nav-link">Contact</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button"
-              data-bs-toggle="dropdown" aria-expanded="false">
-              Works
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="worksOne.html">Portraits</a></li>
-              <li><a class="dropdown-item" href="worksTwo.html">Landscapes</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="worksThree.html">Misc</a></li>
-            </ul>
+        <ul class="myNavList fs-3">
+          <li class="myNavItem"><a href="about.html" class="myNavLink">About</a></li>
+          <li class="myNavItem"><a href="contact.html" class="myNavLink">Contact</a></li>
+          <!-- <li class="myNavItem"><a href="workOne.html" class="myNavLink">Works</a></li> -->
+          <li class="myNavItem">
+            <div class="dropdown">
+              <button class="btn fs-3 btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Works
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Portraits</a></li>
+                <li><a class="dropdown-item" href="#">Landscapes</a></li>
+                <li><a class="dropdown-item" href="#">Canvas</a></li>
+              </ul>
+            </div>
           </li>
         </ul>
       </div>
     </nav>
   </header>
-  <section class="container">
-    <div id="carouselExampleCaptions" class="carousel slide carousel-dark carousel-fade myFonts" data-bs-ride="carousel">
+  <section class="container intro myMargin">
+    <div id="carouselExampleCaptions" class="carousel slide carousel-dark carousel-fade" data-bs-ride="carousel">
       <ol class="carousel-indicators">
         <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"></li>
         <li data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"></li>
@@ -409,7 +409,7 @@
 
   </section>
 
-  <section class="container myFonts" id="feedback">
+  <section class="container" id="feedback">
     <p class="fs-2">Do you like my art works?</p>
     <button class="btn-primary w-25">Yes</button>
     <br><br>
