@@ -15,23 +15,27 @@
 
     <!-- Fonts linked -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
 
-    <title>Saarthak Verma Art Gallery | About</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+
+    <title> Saarthak Verma Art Gallery | About </title>
 </head>
 
-<body class="myFonts">
+<body>
 
     <header>
 
-        <nav class="fixed-top">
+        <nav class="fixed-top myFonts1">
             <div class="myNav container">
 
-                <a href="index.html" id="logo" class="fs-2 myBrand">SAARTHAK </a>
+                <a href="index.html" id="logo" class="fs-2 highlight">SAARTHAK </a>
 
                 <ul class="myNavList fs-3">
-                    <li class="myNavItem"><a href="about.html" class="myNavLink highlight">About</a></li>
+                    <li class="myNavItem"><a href="about.html" class="myNavLink">About</a></li>
                     <li class="myNavItem"><a href="contact.html" class="myNavLink">Contact</a></li>
+                    <!-- <li class="myNavItem"><a href="workOne.html" class="myNavLink">Works</a></li> -->
                     <li class="myNavItem">
                         <div class="dropdown">
                             <button class="btn fs-3 btn-light dropdown-toggle" type="button" id="dropdownMenuButton"
@@ -39,9 +43,9 @@
                                 Works
                             </button>
                             <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                <li><a class="dropdown-item" href="#">Portraits</a></li>
-                                <li><a class="dropdown-item" href="#">Landscapes</a></li>
-                                <li><a class="dropdown-item" href="#">Ca nvas</a></li>
+                                <li><a class="dropdown-item" href="portraits.html">Portraits</a></li>
+                                <li><a class="dropdown-item" href="landscapes.html">Landscapes</a></li>
+                                <li><a class="dropdown-item" href="others.html">Others</a></li>
                             </ul>
                         </div>
                     </li>
@@ -50,26 +54,54 @@
         </nav>
     </header>
 
-    <section class="container myMargin">
-        <div class="w-50">
-            <img src="images/profilePic.jpg" class="w-100" alt="">
-        </div>
-        <div class="w-50">
-            <article>
-                I am Saarthak Verma. I am an artist. I am currently pursuing B Des from NID Bhopal.
-            </article>
+    <section class="container myAbout myFonts2">
+        <div id="profilePic">
+            <img src="images/profilePic.jpg" class="img-fluid" alt="">
         </div>
 
+        <div id="myInfo">
+            <div>
+                <h2> About </h2>
+                <hr>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sapiente voluptates, molestiae cum ab unde
+                    fugiat corporis consequatur dolore molestias quis laboriosam atque ut nostrum blanditiis omnis
+                    harum. Fuga deserunt saepe quia, omnis minus ducimus neque. Perspiciatis unde accusamus commodi
+                    laboriosam doloribus, eaque amet dolore repudiandae sequi cupiditate? Enim, fugiat tempore.</p>
+            </div>
+
+            <div id="education">
+                <h2> Education </h2>
+                <hr>
+                <p><strong> NID Bhopal </strong></p>
+                <p>B Des</p>
+                <p>2020 - present</p>
+                <br>
+
+                <p><strong> First Step Senior Secondary School </strong></p>
+                <p>Higher Secondary School</p>
+                <p>2017 - 2019</p>
+            </div>
+
+            <div id="hobbies">
+                <h2>Hobbies</h2>
+                <hr>
+                <span>Sketching</span>
+                <span>Traveling</span>
+                <span>Reading</span>
+                <span>Singing</span>
+            </div>
+
+        </div>
     </section>
 
-    <footer class="footer mt-auto py-3 bg-light">
+    <footer class="footer mt-auto py-3">
         <div class="container">
             <span class="text-muted"><a style="text-decoration: none;"
-                    href="https://www.instagram.com/saarthak_verma23/"><img src="images/instagramLogo.ico" width="30"
-                        height="24" alt=""> <span class="text-muted">saarthak_verma23</span></a>
+                    href="https://www.instagram.com/saarthak_verma23/">
+                    <img src="images/instagramLogo.ico" width="30" height="24" alt=""> <span
+                        class="text-light">saarthak_verma23</span></a>
         </div>
     </footer>
-
 
 
     <!-- ============== Javascript linked ================ -->
