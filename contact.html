@@ -54,8 +54,36 @@
         </nav>
     </header>
 
-    <section class="container myAbout myFonts2">
-        
+    <section class="container myFonts2" id="myContact">
+
+        <div id="instaLink" class="myMargin">
+            <span class="fs-1"><a style="text-decoration: none;"
+                href="https://www.instagram.com/saarthak_verma23/">
+                <img src="images/instagramLogo.ico" width="30" height="24" alt=""> <span
+                    class="text-light myFonts1">You can DM me on Instagram</span></a>
+        </div>
+
+        <form>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="">
+              </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label"> Describe your order </label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <input class="form-control" type="file" id="formFileMultiple" multiple>
+              </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </section>
 
     <footer class="footer mt-auto py-3">
