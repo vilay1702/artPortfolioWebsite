@@ -132,6 +132,11 @@ footer div{
     margin: 2px;
 }
 
+#hobbies div{
+    display: flex;
+    flex-flow: row wrap;
+}
+
 #hobbies span{
     border: 1px solid white;
     margin: 5px;
