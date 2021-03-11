@@ -22,6 +22,11 @@ body{
 
 /* ============================== NavBar ============================== */
 
+#dropdownMenuButton{
+    background-color: #0f0f0f;
+    border: 0px solid #0f0f0f;
+}
+
 
 .myNavList{
     display: flex;
